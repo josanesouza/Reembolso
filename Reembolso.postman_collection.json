@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "a1daac43-771f-4f2e-a356-d88a05bc6059",
+		"name": "Reembolso",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8605329"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/meureembolso/api/v1/reembolso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"João Pereira\",\r\n  \"matricula\": \"DF0998767\",\r\n  \"valor\": 11.45,\r\n  \"descricao\": \"Passagem aérea para reunião presencial. Campinas.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/meureembolso/api/v1/reembolso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"meureembolso",
+						"api",
+						"v1",
+						"reembolso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/meureembolso/api/v1/reembolso/66a1787bed686d5780a7b849",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/meureembolso/api/v1/reembolso/66a1787bed686d5780a7b849",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"meureembolso",
+						"api",
+						"v1",
+						"reembolso",
+						"66a1787bed686d5780a7b849"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/meureembolso/api/v1/reembolso/66a1787bed686d5780a7b849",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"codigo\": 1234,\r\n  \"motivo\": \"Reembolso solicitado erroneamente.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/meureembolso/api/v1/reembolso/66a1787bed686d5780a7b849",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"meureembolso",
+						"api",
+						"v1",
+						"reembolso",
+						"66a1787bed686d5780a7b849"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/shorturl/7IfhOj",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/shorturl/7IfhOj",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shorturl",
+						"7IfhOj"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

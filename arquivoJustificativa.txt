@@ -1,0 +1,57 @@
+Arquitetura
+Arquitetura de Microserviços:
+
+A aplicação foi desenvolvida com base na arquitetura de microserviços, o que proporciona uma série de vantagens:
+
+Escalabilidade: Cada microserviço pode ser escalado de forma independente, conforme necessário.
+Desacoplamento: Microserviços são independentes e podem ser desenvolvidos, testados e implantados separadamente.
+Resiliência: Se um microserviço falhar, o sistema como um todo não é comprometido, pois outros serviços continuam funcionando.
+
+Padrões de Design
+Padrão SOLID:
+
+Os princípios SOLID foram aplicados para garantir que o código seja mais legível, manutenível e testável:
+
+Single Responsibility Principle (SRP): Cada classe e método tem uma única responsabilidade, o que torna o código mais coeso.
+Open/Closed Principle (OCP): O código está aberto para extensão, mas fechado para modificação, facilitando a adição de novas funcionalidades.
+Liskov Substitution Principle (LSP): As subclasses podem substituir as suas superclasses sem alterar o comportamento do sistema.
+Interface Segregation Principle (ISP): Interfaces específicas evitam que as classes implementem métodos desnecessários.
+Dependency Inversion Principle (DIP): Depende de abstrações e não de implementações concretas, facilitando a troca de implementações.
+Padrão Repository:
+
+O padrão Repository foi utilizado para abstrair a lógica de acesso a dados. Isso permite que a aplicação acesse a camada de persistência de maneira desacoplada e facilita o teste da lógica de negócios sem depender do banco de dados.
+
+Tecnologias
+
+Spring Boot foi escolhido devido às seguintes razões:
+
+Facilidade de Configuração: Permite iniciar rapidamente novos projetos com configuração mínima.
+Integração com Spring Framework: Fornece suporte completo para o Spring Framework e seus módulos, como Spring Data e Spring Security.
+Ecosistema Rico: Oferece integração com várias ferramentas e bibliotecas, como Maven e Docker.
+MongoDB:
+
+MongoDB foi selecionado como banco de dados NoSQL pela sua flexibilidade e escalabilidade:
+
+JUnit e Mockito:
+
+Para testes unitários e de integração, foram utilizados:
+
+JUnit: Framework de testes para criar e executar testes automatizados.
+Mockito: Biblioteca para criação de mocks e stubs, facilitando o isolamento das unidades de teste.
+RESTful APIs:
+
+A aplicação utiliza APIs RESTful para comunicação entre microserviços e clientes. O padrão REST foi escolhido por ser amplamente adotado e permitir interações simples e escaláveis usando HTTP.
+
+Docker:
+
+Docker foi utilizado para contêinerizar a aplicação, o que proporciona:
+
+Consistência: Ambiente de execução padronizado, independentemente do ambiente de desenvolvimento ou produção.
+Isolamento: Cada contêiner é isolado, evitando conflitos entre dependências e configurações.
+Configuração com application.properties:
+
+
+Justificativa das Decisões
+A arquitetura de microserviços e os padrões de design garantem que o código seja modular, testável e de fácil manutenção. 
+
+Essa abordagem permite que a aplicação seja adaptável às necessidades futuras e mantenha um alto padrão de qualidade e desempenho.
