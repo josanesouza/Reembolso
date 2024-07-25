@@ -31,7 +31,7 @@ spring.data.mongodb.uri=mongodb://localhost/meureembolso
 Acessar o arquivo "Reembolso.postman_collection"
 Importar no Postman
 
-![image](https://github.com/user-attachments/assets/f0eefa2f-aaa2-4774-9737-df0ffe0b15ce)
+
 
 
 
