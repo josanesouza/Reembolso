@@ -1,11 +1,19 @@
-Arquitetura
+
+Priore:
+Durante o percurso desse desenvolvimento tive algun contratempos com o Docker, refiz a estrutura do projeto no meio do caminho
+Fiquei sem tempo para concluir, detalhar e deixar o  sucinto para análise. 
+
+Ferramentas 
+Eclipse, Docker , MongoDBCompass, GitHub, Postman
+
+
 Arquitetura de Microserviços:
 
 A aplicação foi desenvolvida com base na arquitetura de microserviços, o que proporciona uma série de vantagens:
 
 Escalabilidade: Cada microserviço pode ser escalado de forma independente, conforme necessário.
-Desacoplamento: Microserviços são independentes e podem ser desenvolvidos, testados e implantados separadamente.
-Resiliência: Se um microserviço falhar, o sistema como um todo não é comprometido, pois outros serviços continuam funcionando.
+Microserviços são independentes e podem ser desenvolvidos, testados e implantados separadamente.
+Se um microserviço falhar, o sistema como um todo não é comprometido, pois outros serviços continuam funcionando.
 
 Padrões de Design
 Padrão SOLID:
@@ -45,11 +53,9 @@ A aplicação utiliza APIs RESTful para comunicação entre microserviços e cli
 Docker:
 
 Docker foi utilizado para contêinerizar a aplicação, o que proporciona:
+Ambiente de execução padronizado, independentemente do ambiente de desenvolvimento ou produção.
 
-Consistência: Ambiente de execução padronizado, independentemente do ambiente de desenvolvimento ou produção.
-Isolamento: Cada contêiner é isolado, evitando conflitos entre dependências e configurações.
 Configuração com application.properties:
-
 
 Justificativa das Decisões
 A arquitetura de microserviços e os padrões de design garantem que o código seja modular, testável e de fácil manutenção. 
