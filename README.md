@@ -31,6 +31,11 @@ spring.data.mongodb.uri=mongodb://localhost/meureembolso
 Acessar o arquivo "Reembolso.postman_collection"
 Importar no Postman
 
+##EXECUTAR os Testes
+Clicar no projeto Run as -> JUnit Test
+Após , Coverage AS -> JUnit Test ( Gerar Relatório)
+
+
 
 
 
